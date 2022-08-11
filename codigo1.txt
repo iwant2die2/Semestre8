@@ -5,3 +5,19 @@ for path in os.listdir(dir):
     if os.path.isfile(os.path.join(dir, path)):
         initial_count += 1
 print("Numero de archivos: ", initial_count)
+---------------
+class Bicicleta:
+    counter = 0
+
+    def __init__(self):
+        pass
+    def one_method(self):
+        Bicicleta.counter += 1
+        return Bicicleta.counter
+  
+g1 = Bicicleta()
+print(g1.one_method())
+---------------
+with open('c:/Users/Escovar/Desktop/Python/Archivo.txt') as myfile:
+    total_lines = sum(1 for line in myfile)
+print("Numero de lineas en un archivo: ", total_lines)
